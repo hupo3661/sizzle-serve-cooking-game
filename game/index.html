@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Sizzle &amp; Serve — a cooking game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #2b2118; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    color: #fff8ea;
+  }
+  h1 { font-size: 20px; margin: 10px 0 4px; letter-spacing: 1px; }
+  p { font-size: 13px; margin: 0 0 10px; color: #d9c39a; }
+  canvas {
+    width: 1280px;
+    height: 720px;
+    max-width: 96vw;
+    max-height: 78vh;
+    border-radius: 10px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    background: #f6e3c5;
+  }
+  .keys { font-size: 12px; color: #b8ab8d; margin-top: 8px; }
+</style>
+</head>
+<body>
+<h1>🍳 SIZZLE &amp; SERVE</h1>
+<p>Build every order before its patience runs out — grill the meat, chop the veg, plate it, serve it.</p>
+<canvas id="game" width="1280" height="720"></canvas>
+<p class="keys">Mouse: click bins, grill, board, plate, SERVE &nbsp;·&nbsp; Keys: 1–8 ingredients · Enter serve · G collect grill · C collect chopped · T trash plate · R restart</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
